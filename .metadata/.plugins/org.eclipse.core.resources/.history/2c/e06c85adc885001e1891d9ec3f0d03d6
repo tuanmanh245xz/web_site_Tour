@@ -1,0 +1,27 @@
+package com.iva.backend.dtos;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import jakarta.validation.constraints.NotEmpty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class ProductsDTO {
+	@NotEmpty(message = "categories khong duoc de trong")
+	public String  name;
+	public float  price;
+	public String  thumbnail;
+	public String  description;
+	
+	//mapping voi data column categories_id nhung ko muon thay doi categoriesId nen dung @JsonProperty("categories_id")
+	@JsonProperty("categories_id")
+	public int   categoriesId;
+}

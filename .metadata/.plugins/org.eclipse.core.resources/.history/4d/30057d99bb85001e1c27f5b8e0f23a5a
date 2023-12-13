@@ -1,0 +1,26 @@
+package com.iva.backend.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+
+@RestController
+@RequestMapping("api/v1")
+public class CategoriesController {
+	
+	@GetMapping("")
+	public ResponseEntity<String> getAllCategories() {
+		return ResponseEntity.ok("api da dc ket noi ");
+		
+	}
+	@PostMapping("")
+	public ResponseEntity<String> createCategories() {
+		return ResponseEntity.ok("api da dc ket noi post ");
+		
+	}
+	
+}

@@ -1,0 +1,7 @@
+package com.iva.backend.dtos;
+
+public class CategoriesDTO {
+	
+	private String  name;
+
+}

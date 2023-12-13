@@ -1,0 +1,5 @@
+package com.iva.backend.dtos;
+
+public class ProductsDTO {
+
+}
